@@ -1,0 +1,592 @@
+$white-bg:#FFF;
+$Logo-color:#1D1D1D;
+$black-color:#000000;
+$primary-blue:#024E82;
+$footer-bg:#FBFBFB;
+$form-color:#3A3939;
+$form-p-color:#555555;
+$input-border-color:#EBEBEB;
+$btn-bg:#024E82;
+
+*{
+padding:0;
+margin:0;
+}
+html{
+font-size:16px;
+}
+header{
+    padding:22px 65px;
+    background:$white-bg;
+    color:$black-color;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+	position:sticky;
+
+    .Logo{
+        color:$Logo-color;
+        font-family:Lato;
+        font-size:2.2rem;
+    }
+
+    a{
+    text-transform:uppercase;
+    text-decoration:none;
+    font-style:normal;
+    font-weight:700;
+    font-family:Arimo;
+    font-size:0.75rem;
+    line-height:0.85rem;
+    margin-right:8px;
+    padding:5px 10px;
+    }
+
+    .cart-icons{
+        i{
+            width:24px;
+            height:24px;
+            margin-right:34px;
+            display:inline-block;
+        }
+        .user-icon{
+            background:url("../resources/user.png") no-repeat;
+            }
+        .cart-icon{
+            background:url("../resources/shopping-bag.png") no-repeat;
+        }
+        .menu-icon{
+            background:url("../resources/menu.png") no-repeat;
+        }
+    }
+}
+
+main{
+    .hero{
+		text-transform:uppercase;
+		color:$white-bg;
+		position:relative;
+		
+		img{
+			width:100%;
+		}
+		
+		p{
+			position:absolute;
+			top:202px;
+			right:102px;
+			font-size:48px;
+			font-weight:800;
+			font-family:Lato;
+			max-width:450px;
+			text-align:center;
+		}
+		
+		a{
+			position:absolute;
+			top:370px;
+			right:280px;
+			text-align:center;
+			padding:5px 10px;
+			border:3px solid $white-bg;
+			border-radius:3px;
+			font-size:22px;
+			font-family:Lato;
+			font-weight:700;
+		}
+    }
+	
+	.productList, .top-sellersList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 20px;
+		
+		div
+		{
+			img{
+				width:295px;
+				height:342px;
+			}
+			margin-top: 50px;
+		}
+		
+		.title{
+			font-family:Baloo;
+			font-weight:400;
+			font-size:1rem;
+			text-align:center;
+			color:$Logo-color;
+		}
+		
+		.price{
+			font-family:Lato;
+			font-weight:400px;
+			font-size:1rem;
+			text-align:center;
+			color:$primary-blue;
+		}
+	}
+	
+	.founders-section{
+		background:$footer-bg;
+		padding:100px 0;
+		
+		h2{
+			font-family: Arimo;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 48px;
+			text-align: center;
+
+		}
+	}
+	
+	.founders{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 20px;
+		
+		div
+		{
+			img{
+				width:295px;
+				height:280px;
+			}
+			margin-top: 50px;
+		}
+		
+		.title{
+			font-family:Baloo;
+			font-weight:400;
+			font-size:1rem;
+			text-align:left;
+			margin-top:20px;
+			color:$Logo-color;
+		}
+	}
+	
+	.new-arrivals, .top-sellers{
+		h4{
+		font-family:Arimo;
+		font-weight:700;
+		font-size:36px;
+		line-height:48px;
+		text-align:center;
+		margin-top:30px;
+		}
+		
+		p{
+		text-align:center;
+		font-family:Lato;
+		font-size:1.4rem;
+		font-weight:400;
+		margin-top:16px;
+		}
+		
+		
+	}
+	
+	.services
+	{
+		display:flex;
+		flex-wrap:nowrap;
+		justify-content:space-between;
+		padding:0 20px;
+		margin:70px 0;
+		
+		i{
+			margin-right:22px;
+			display:inline-block;
+			width:30px;
+			height:30px;
+		}
+		.shipping-icon{
+            background:url("../resources/icon.png") no-repeat;
+            }
+		.support-icon{
+            background:url("../resources/icon-1.png") no-repeat;
+            }
+		.return-icon{
+            background:url("../resources/icon-2.png") no-repeat;
+            }
+		.payment-icon{
+            background:url("../resources/icon-3.png") no-repeat;
+            }
+			
+		h4{
+			font-family:Baloo;
+			font-size:1rem;
+			font-weight:400;
+		}
+		p{
+			 font-family:Lato;
+			 font-size:1rem;
+			 font-weight:400;
+		}
+		
+	}
+	
+	.promotion-CTAs{
+		display:flex;
+		flex-wrap:nowrap;
+		justify-content:space-between;
+		padding:0 20px;
+		margin-bottom:80px;
+		
+		.peace-of-mind{
+			width:59%;
+		}
+		
+		.buy2{
+			width:39%;
+		}
+		
+		div{
+			text-align:center;
+			color:$white-bg;
+			background:$black-color;
+			font-family:Lato;
+			font-weight:400;
+			padding: 100px 0;
+			
+			h4{
+				font-size:2rem;
+				text-transform:uppercase;
+				margin-bottom:24px;
+			}
+			p{
+				font-size:1rem;
+				margin-bottom:30px;
+			}
+			.btn{
+				display:inline-block;
+				padding:14px 36px;
+				background:$white-bg;
+				color:$primary-blue;
+				text-transform:uppercase;
+			}
+		}
+	}
+	
+	
+		.shopnow-section{
+			text-align:center;
+			margin: 70px 0 90px;
+		}
+	
+		.btn{
+			background:$btn-bg;
+			padding:18px 36px;
+			text-transform:uppercase;
+			font-family:Lato;
+			color:$white-bg;
+			font-size:1rem;
+			border:none;
+		}
+	
+	
+	.Banner{
+		position:relative;
+		
+		img{
+			width:100%;
+		}
+		h4{
+			position:absolute;
+			bottom:70px;
+			left:60px;
+			font-size:3rem;
+			font-weight:400;
+			font-family:Lato;
+			text-transform:uppercase;
+			color:$white-bg;
+		}
+	}
+	
+	.models{
+		display:flex;
+		flex-wrap:nowrap;
+		justify-content:space-between;
+		padding:0 20px;
+		margin: 100px 0 0 0;
+		
+		div{
+			width:49%;
+			position:relative;
+			text-align:center;
+			
+			img{
+				width:100%;
+			}
+			
+			.btn{
+				display:inline-block;
+				padding:14px 36px;
+				background:$white-bg;
+				color:$primary-blue;
+				text-transform:uppercase;
+				border-radius:5px;
+				font-family:Lato;
+				font-weight:400;
+				position:absolute;
+				bottom:50px;
+				right:40%;
+			}
+		}
+		
+	}
+	
+	.testimonials{
+		padding: 0 20px;
+		
+		h2{
+			font-family: Arimo;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 48px;
+			text-align: center;
+			margin:80px 0 130px 0;
+
+		}
+		
+		.testimoni{
+			display: flex;
+			align-items: center;
+			width: 80%;
+			margin: 0 auto;
+			margin-bottom:250px;
+			
+			img{
+				margin-right:50px;
+			}
+			
+			.quotes{
+				font-family:Lato;
+				font-size:60px;
+				line-height:30px;
+			}
+			
+			.description{
+				font-family: Baloo;
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 36px;
+				letter-spacing: 0em;
+				text-align: left;
+			}
+			
+			.author{
+				font-family: Arimo;
+				font-size: 21px;
+				font-weight: 700;
+				margin-top:25px;
+
+			}
+		}
+	}
+	
+	.contact-form{
+		margin-top:150px;
+		margin-bottom:110px;
+		justify-content:space-between;
+		display:flex;
+		padding:0 20px;
+		
+		h5{
+		font-family:Arimo;
+		font-size:2.2rem;
+		color:$form-color;
+		font-weight:700;
+		margin-bottom:2rem;
+		}
+		
+		h6{
+			font-family:Arimo;
+			font-size:1.5rem;
+			color:$Logo-color;
+			font-weight:700;
+			margin-bottom:1rem;
+		}
+		
+		p{
+		font-family:Lato;
+		font-size:1rem;
+		margin-bottom:50px;
+		color:form-p-color;
+		}
+		
+		.subsection
+		{
+			display:flex;
+			justify-content:space-between;
+		}
+		
+		.size-50{
+			width:50%;
+		}
+		
+		label{
+			display:inline-block;
+			width:100%;
+			font-family:Lato;
+			font-size:1rem;
+			font-weight:400;
+		}
+		
+		input{
+			width:90%;
+			border:1px solid $input-border-color;
+			padding:10px;
+			margin-bottom:20px;
+			
+		}
+		
+		input[type="textarea"]{
+			width:98%;
+			min-height:180px;
+		}
+		
+		button{
+			background:$btn-bg;
+			padding:18px 36px;
+			text-transform:uppercase;
+			font-family:Lato;
+			color:$white-bg;
+			font-size:1rem;
+			border:none;
+		}
+	}
+	
+}
+
+footer{
+	padding: 0 20px;
+	background:$footer-bg;
+	padding-top:70px;
+	
+	h5{
+		font-family:Arimo;
+		font-weight:700px;
+		font-size:0.9rem;
+		color:$Logo-color;
+		margin-bottom:30px;
+		
+	}
+	
+.top-section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom:70px;
+		font-family:Lato;
+		
+		li{
+			list-style:none;
+			
+			font-size:1rem;
+			color:$Logo-color;
+			font-weight:400;
+			margin-bottom:10px;
+		}
+		
+		input[type="email"]{
+			    border: none;
+				background: none;
+				font-size: 1rem;
+				border-bottom: 1px solid black;
+		}
+	}
+	
+.bottom-section{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: no-wrap;
+	padding:30px 0;
+	font-family:Lato;
+	
+	a{
+		margin-right:15px;
+	}
+	
+	p{
+		margin-bottom:10px;
+	}
+}	
+	
+	
+}
+
+
+@media (min-width: 576px) and (max-width:991px){
+	
+  
+    header{
+		.nav{
+			display:none;
+		}
+	}
+	main {
+		.productList, .top-sellersList{
+			div{
+				width:100%;
+				margin-bottom:100px;
+				
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+		
+		.services{
+			flex-wrap:wrap;
+			
+			div{
+				margin-bottom:30px;
+			}
+		}
+		
+		.promotion-CTAs{
+			flex-wrap:wrap;
+			
+			.peace-of-mind, .buy2{
+				width:100%;
+				margin-bottom:30px;
+			}
+		}
+		
+		.models{
+			flex-wrap:wrap;
+			
+			div{
+				width:100%;
+				margin-bottom:30px;
+				}
+		}
+		
+		.founders{
+			div{
+				width:49%;
+				margin-bottom:30px;
+				
+				img{
+					width:100%;
+					height:100%;
+					}
+			}
+		}
+		
+	}
+	
+	footer{
+		.top-section{
+			div{
+				width:50%;
+				margin-bottom:30px;
+			}
+		}
+	}
+  
+}
